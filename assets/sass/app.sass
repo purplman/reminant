@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+$br: 10px;
+
+*,
+*::after,
+*::before
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-family: 'Poppins', sans-serif
+
+.wrapper 
+    background-image: url('../assets/img/mesh-gradient.svg')
+    background-size: cover
+    padding: 30px 60px  
+    height: 100vh
+    overflow: hidden
+
+header
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    padding: 30px 60px
+
+main 
+    position: relative
+    display: flex
+    flex-direction: column
+    justify-content: center
+    height: 100%
+
+    h1 
+        font-weight: bold
+        font-size: 64px
+        margin-bottom: 30px
+
+    p
+        font-size: 18px
+        line-height: 38px
+        margin-bottom: 60px
+
+        a
+            color: #000
+            font-weight: 500
+
+    .sally 
+        position: absolute
+        right: 0
+
+
+form
+    display: flex
+    gap: 20px
+
+    input
+        height: 50px
+        width: 500px    
+        border-radius: $br
+        border: none
+        outline: none
+        padding-left: 24px
+        padding-right: 24px
+
+    button
+        appearance: none
+        background-color: #000
+        color: #fff
+        width: 125px
+        border-radius: $br
+        font-weight: 600
+        cursor: pointer
